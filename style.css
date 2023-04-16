@@ -1,0 +1,295 @@
+body, html {
+    font-family: Arial, Helvetica,sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #35424a;
+    border-bottom: 4px solid #e8491d;
+}
+
+.span {
+    color: #e8491d;
+}
+
+nav {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .logo {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+}
+
+#orange {
+    color: #e8491d;
+    transition: all .5s;
+}
+
+nav .menu-links {
+    margin: 0 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+#orange:hover {
+    color: rgb(182, 182, 182);
+}
+
+nav .menu-links:hover {
+    color: rgb(182, 182, 182);
+}
+
+.section-1 {
+    background: url('	https://jolly-kalam-23776e.netlify.app/corps/img/showcase.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+.section-1 h1 {
+    text-align: center;
+    margin: 0;
+    color: white;
+    font-size: 60px;
+    line-height: 80px;
+}
+
+.section-1 p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.section-2 {
+    height: 12vh;
+    background-color: #35424a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-2 h3 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+}
+
+.section-2 form .email {
+    width: 200px;
+    height: 40px;
+}
+
+.section-2 form .submit {
+    width: 100px;
+    height: 43px;
+    background-color: #e8491d;
+    color: white;
+    transition: all .5s;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.section-3 {
+    padding: 15px;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section-3 div {
+    margin: 0 25px;
+    text-align: center;
+}
+
+.section-3 img {
+    padding-top: 20px;
+    width: 100px;
+}
+
+.section-3 h3, p {
+    text-align: center;
+    padding: 5px 0;
+}
+
+.section-3 h3 {
+    font-size: 25px;
+}
+
+footer {
+    background-color: #e8491d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* About us */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+article {
+    padding-right: 100px;
+}
+
+.about h3, p {
+    text-align: left;
+}
+
+.about-card {
+    background-color: #35424a;
+    width: 800px;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Services */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 45px;
+}
+
+.article-services {
+    width: 55vw;
+}
+
+.article-services h2 {
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 0;
+}
+
+.article-services ul li {
+    background-color: #e6e6e6;
+    list-style: none;
+    padding: 40px;
+    margin: 5px 0;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+}
+
+.aside-services {
+    background-color:#35424a;
+    color: white;
+    text-align: center;
+    width: 500px;
+}
+
+.aside-services h3 {
+    text-align: left;
+    margin-left: 50px;
+}
+
+.form-services {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px 50px 50px 50px;
+}
+
+.form-services input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.form-services .submit-services {
+    background-color: #e8491d;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 30px;
+    width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aside-services {
+        margin-bottom: 10px;
+    }
+
+    .article-services {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .section-2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .section-2 h3 {
+        padding-bottom: 15px;
+    }
+
+    .section-3 {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about h3, p {
+        text-align: center;
+    }
+
+    article {
+        padding-right: 0;
+    }
+
+    .about-card {
+        width: 100%;
+    }
+
+    .aside-services {
+        width: 300px;
+    }
+
+}
