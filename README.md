@@ -4,7 +4,7 @@
 
 ## Demo
 
-[Clique aqui](https://allan-carlos.github.io/Corps/) e você será redireciado para o site.
+[Clique aqui](https://allan-carlos.github.io/Corps/) e você será redirecionado(a) para o site.
 
 ## Tecnologias Usadas
 
