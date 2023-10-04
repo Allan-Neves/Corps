@@ -200,6 +200,7 @@ p {
 }
 
 .article-services {
+    margin-right: 20px;
     width: 55vw;
 }
 
@@ -279,6 +280,10 @@ footer {
     .aside-services {
         margin-bottom: 10px;
         width: 55vw;
+    }
+
+    .article-services {
+        margin-right: 0px;
     }
 
     .article-services h2 {
