@@ -1,5 +1,6 @@
-body, html {
-    font-family: Arial, Helvetica,sans-serif;
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     padding: 0;
     margin: 0;
@@ -14,15 +15,26 @@ h3 {
     font-size: 1.8rem;
 }
 
+#orange {
+    color: #e8491d;
+    transition: all .5s;
+}
+
+#orange:hover {
+    color: rgb(182, 182, 182);
+}
+
+/* Cabeçalho */
 header {
     background-color: #35424a;
     border-bottom: 4px solid #e8491d;
 }
 
-.span {
+span {
     color: #e8491d;
 }
 
+/* Navegação */
 nav {
     padding: 30px 0;
     display: flex;
@@ -38,16 +50,14 @@ nav .logo {
 
 nav .menu {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
-}
-
-#orange {
-    color: #e8491d;
-    transition: all .5s;
+    margin: 10px 0;
 }
 
 nav .menu-links {
-    margin: 0 20px;
+    margin: 0px 20px;
     color: white;
     font-weight: bold;
     font-size: 1.7rem;
@@ -55,16 +65,13 @@ nav .menu-links {
     transition: all .5s;
 }
 
-#orange:hover {
-    color: rgb(182, 182, 182);
-}
-
 nav .menu-links:hover {
     color: rgb(182, 182, 182);
 }
 
+/* Seção 1 - Página Home */
 .section-1 {
-    background: url('	https://jolly-kalam-23776e.netlify.app/corps/img/showcase.jpg');
+    background: url('https://jolly-kalam-23776e.netlify.app/corps/img/showcase.jpg');
     background-position: center;
     background-size: cover;
     height: 50vh;
@@ -83,12 +90,13 @@ nav .menu-links:hover {
     line-height: 80px;
 }
 
-.section-1 p{
+.section-1 p {
     color: white;
     font-size: 2rem;
     line-height: 30px;
 }
 
+/* Seção 2 - Formulário de inscrição */
 .section-2 {
     height: 12vh;
     background-color: #35424a;
@@ -120,6 +128,7 @@ nav .menu-links:hover {
     cursor: pointer;
 }
 
+/* Seção 3 - Página Services */
 .section-3 {
     padding: 15px;
     max-width: 70%;
@@ -142,7 +151,8 @@ nav .menu-links:hover {
     width: 100px;
 }
 
-.section-3 h3, p {
+.section-3 h3,
+p {
     text-align: center;
     padding: 5px 0;
 }
@@ -155,19 +165,7 @@ nav .menu-links:hover {
     font-size: 1.6rem;
 }
 
-footer {
-    background-color: #e8491d;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    font-weight: 400;
-    font-size: 1.7rem;
-}
-
-/* About us */
-
+/* Página "About" */
 .about {
     display: flex;
     justify-content: space-evenly;
@@ -176,11 +174,12 @@ footer {
     margin: 0 auto;
 }
 
-article {
+.article-about {
     padding-right: 100px;
 }
 
-.about h3, p {
+.about h3,
+p {
     text-align: left;
 }
 
@@ -192,8 +191,7 @@ article {
     margin: 20px;
 }
 
-/* Services */
-
+/* Página de Serviços */
 .container {
     display: flex;
     justify-content: center;
@@ -220,7 +218,7 @@ article {
 }
 
 .aside-services {
-    background-color:#35424a;
+    background-color: #35424a;
     color: white;
     text-align: center;
     width: 500px;
@@ -258,6 +256,18 @@ article {
     width: 100px;
 }
 
+/* Rodapé */
+footer {
+    background-color: #e8491d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-weight: 400;
+    font-size: 1.7rem;
+}
+
 @media screen and (max-width: 1000px) {
     .container {
         flex-direction: column;
@@ -268,10 +278,15 @@ article {
 
     .aside-services {
         margin-bottom: 10px;
+        width: 55vw;
     }
 
-    .article-services {
-        width: 300px;
+    .article-services h2 {
+        margin: 0;
+    }
+
+    .article-services ul {
+        padding: 0;
     }
 }
 
@@ -285,10 +300,6 @@ article {
         padding: 20px;
     }
 
-    .section-2 h3 {
-        padding-bottom: 15px;
-    }
-
     .section-3 {
         flex-direction: column;
     }
@@ -297,19 +308,45 @@ article {
         flex-direction: column;
     }
 
-    .about h3, p {
+    .about h3,
+    p {
         text-align: center;
-    }
-
-    article {
-        padding-right: 0;
     }
 
     .about-card {
         width: 100%;
     }
 
-    .aside-services {
+    .article-about {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .logo {
+        text-align: center;
+    }
+
+    .menu {
+        padding: 0;
+    }
+
+    .section-1 h1 {
+        font-size: 4rem;
+        line-height: 40px;
+    }
+
+    .section-1 p {
+        color: white;
+        font-size: 1.5rem;
+        line-height: 20px;
+    }
+
+    .section-2 {
+        height: 24vh;
+    }
+
+    .text-form>textarea {
         width: 300px;
     }
 }
